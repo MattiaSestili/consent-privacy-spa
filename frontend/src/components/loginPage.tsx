@@ -1,6 +1,6 @@
 import React, { FC, useEffect, useState } from "react"
 import { Box, Button, Container, CssBaseline, TextField, Typography } from "@mui/material"
-import { useAuth } from "../auth"
+import { useAuth } from "../../Providers/auth"
 import { useNavigate } from "react-router-dom"
 
 export const LoginPage: FC = () => {
@@ -11,7 +11,7 @@ export const LoginPage: FC = () => {
 
   useEffect(() => {
     if (auth.isAuthenticated) {
-      navigate("/give-consent")
+      navigate("/main/give-consent", { replace: true })
     }
   }, [auth.isAuthenticated, navigate])
 

@@ -28,6 +28,7 @@
         "react-hooks/rules-of-hooks": "error", // Check rules of Hooks
         "react-hooks/exhaustive-deps": "warn", // Checks effect dependencies
         "no-unused-vars": "off",
+        "@typescript-eslint/no-var-requires": "off",
         "react/no-unescaped-entities": "off",
         "no-console": ["error", { "allow": ["info","warn", "error"] }]
     },
